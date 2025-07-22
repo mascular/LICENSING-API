@@ -24,8 +24,8 @@ A lightweight and secure license authentication system for your tools or apps â€
 ### âœ… 2. Installation
 
 ```bash
-git clone https://github.com/your-username/license-auth-api.git
-cd license-auth-api
+git clone https://github.com/mascular/LICENSING-API.git
+cd LICENSING-API
 go mod tidy
 ````
 
