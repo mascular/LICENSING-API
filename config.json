@@ -1,4 +1,5 @@
 {
     "X-Api-Key": "your-secret-api-key",
-    "Port": "90"
+    "Port": "90",
+    "discord_webhook": ""
 }

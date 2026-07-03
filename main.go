@@ -101,6 +101,11 @@ func main() {
     http.HandleFunc("/create-key", api.AuthMiddleware(api.CreateKeyHandler))
     http.HandleFunc("/delete-key", api.AuthMiddleware(api.DeleteKeyHandler))
     http.HandleFunc("/login", api.LoginHandler)
+    http.HandleFunc("/reset-hwid", api.AuthMiddleware(api.ResetHWIDHandler))
+    http.HandleFunc("/list-apps", api.AuthMiddleware(api.ListAppsHandler))
+    http.HandleFunc("/list-keys", api.AuthMiddleware(api.ListKeysHandler))
+    http.HandleFunc("/key-info", api.AuthMiddleware(api.KeyInfoHandler))
+
 
     log.Fatal(http.ListenAndServe(":"+common.AppConfig.Port, nil))
 }

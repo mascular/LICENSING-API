@@ -9,6 +9,7 @@ import (
 type Config struct {
     APIKey string `json:"X-Api-Key"`
     Port   string `json:"Port"`
+    DiscordWebhook  string `json:"discord_webhook"`
 }
 
 var AppConfig Config
